@@ -1,4 +1,18 @@
 
+@font-face {
+  font-family: 'OmoriFont';
+  src: url('https://raw.githubusercontent.com/amyxgplus/OmoriFont/main/OMORI_GAME2.ttf') format('truetype');
+}
+
+h1 {
+  font-family: "DejaVu Serif", serif !important;
+}
+
+body, nav {
+  font-size: calc(1rem + 15px); 
+}
+
+
 ul {
   display: flex;
   gap: 20px;
@@ -14,8 +28,16 @@ body {
     align-items: baseline;
   }
 
+  nav, nav * {
+    font-family: "DejaVu Serif", serif !important;
+  }
+
+  button, button * {
+    font-family: "DejaVu Serif", serif !important;
+  }
+
   nav {
-    padding: 2rem 5rem;
+    padding: 2rem 10rem;
     border-bottom: 1px dotted
       hsl(0deg 0% 0% / 0.2);
       color: white;
@@ -70,7 +92,7 @@ font-weight: bold;
   display: flex;
   justify-content: space-between; 
   align-items: center;
-  padding: 2rem 5rem;
+  padding: 2rem 10rem;
   background-color: black;
   color: white;
 }
@@ -84,6 +106,7 @@ font-weight: bold;
   flex: 1;
   display: flex; 
   justify-content: flex-end;
+  border: 10rem solid black;
 }
 
 .first-container img {
@@ -120,8 +143,17 @@ button {
 .second-container {
   background-color: #ffffff;
   color: black;
-  padding: 2rem;
+  padding: 8rem 2rem;
+
 }
+
+
+.second-container img {
+  max-width:100%; 
+
+  border-radius: 10px; 
+}
+
 
 h2 {   color:black;   background-color: #ffffff;
   display:flex;
@@ -132,6 +164,65 @@ h2 {   color:black;   background-color: #ffffff;
   font-weight: bold;
 }
 
+.container-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    padding: 2rem 18rem;
+    margin: 5px;
+
+
+}
+
+.container-images div img {
+    display: flex;
+    background-color: white;
+    height: 200px;
+    width: 200px;
+    border: 10px solid black;
+    border-radius: 13px;
+}
+
+div.text {
+  color: white;
+  text-align: center;
+  padding: 20px 0px;
+  
+}
+
+div.elea, div.aglea {
+  flex-shrink: 0;
+}
+
+.third-container {
+  display: flex;
+  color: #ffffff;
+  background-color: rgb(0, 0, 0);
+  margin: 5rem 0rem;
+  justify-content: center;
+  
+}
+
+.third-container p {
+  font-size: 2.5rem;
+}
+
+.fourth-container {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  justify-content: center;
+  padding: 20rem 0rem
+}
+
 * {
   background-color: black;
+}
+
+
+* {
+  font-family: 'OmoriFont', sans-serif !important; /* Apply OmoriFont globally */
+  
 }
